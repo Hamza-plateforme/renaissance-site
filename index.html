@@ -3,285 +3,487 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Renaître à soi-m’aime</title>
+
+  <title>Renaître à soi-m’aime — Accompagnement intérieur</title>
+
+  <meta
+    name="description"
+    content="Renaître à soi-m’aime : un espace sensible et profond pour revenir à soi, apaiser la lutte intérieure et retrouver une direction plus juste."
+  />
+
+  <meta name="theme-color" content="#103f34" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <div class="sticky-header-wrap" id="siteHeader">
-    <div class="top-white-bar">
-      <div class="top-white-inner">
-        <a href="#top" class="brand brand-white" aria-label="Accueil">
-          <svg
-            class="logo-phoenix logo-phoenix-whitebar"
-            viewBox="0 0 260 120"
-            role="img"
-            aria-label="Renaître à soi-m’aime - logo phénix"
+  <a class="skip-link" href="#main-content">
+    Aller directement au contenu
+  </a>
+
+  <header class="site-header" id="siteHeader">
+
+    <div class="header-inner">
+
+      <a class="brand" href="#top" aria-label="Retour à l'accueil">
+
+        <svg
+          class="brand-logo"
+          viewBox="0 0 320 120"
+          role="img"
+          aria-label="Logo Renaître à soi-m’aime représentant un phénix"
+        >
+          <defs>
+            <linearGradient id="phoenixGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#c99745" />
+              <stop offset="48%" stop-color="#e2bd73" />
+              <stop offset="100%" stop-color="#2f8066" />
+            </linearGradient>
+          </defs>
+
+          <circle
+            cx="58"
+            cy="60"
+            r="44"
+            fill="none"
+            stroke="url(#phoenixGradient)"
+            stroke-width="3"
+          />
+
+          <path
+            d="M58 25 C53 39, 51 49, 58 69 C65 49, 63 39, 58 25"
+            fill="url(#phoenixGradient)"
+          />
+
+          <path
+            d="M58 39
+               C42 39, 30 47, 23 59
+               C31 53, 38 51, 46 53
+               C37 56, 31 62, 27 71
+               C37 64, 46 62, 53 64
+               C45 68, 39 74, 36 82
+               C45 74, 52 70, 58 68"
+            fill="none"
+            stroke="url(#phoenixGradient)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <path
+            d="M58 39
+               C74 39, 86 47, 93 59
+               C85 53, 78 51, 70 53
+               C79 56, 85 62, 89 71
+               C79 64, 70 62, 63 64
+               C71 68, 77 74, 80 82
+               C71 74, 64 70, 58 68"
+            fill="none"
+            stroke="url(#phoenixGradient)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <text
+            x="122"
+            y="52"
+            fill="#173f34"
+            font-family="Cormorant Garamond, serif"
+            font-size="18"
+            letter-spacing="3"
           >
-            <defs>
-              <linearGradient id="phoenixGradBar" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#d8b15f" />
-                <stop offset="45%" stop-color="#c69539" />
-                <stop offset="100%" stop-color="#2f7a63" />
-              </linearGradient>
-            </defs>
+            RENAÎTRE À
+          </text>
 
-            <circle cx="60" cy="60" r="46" fill="none" stroke="url(#phoenixGradBar)" stroke-width="3" />
+          <text
+            x="122"
+            y="78"
+            fill="#173f34"
+            font-family="Cormorant Garamond, serif"
+            font-size="20"
+            letter-spacing="3"
+          >
+            SOI-M’AIME
+          </text>
+        </svg>
+      </a>
 
-            <path
-              d="M60 28 C55 40, 52 50, 60 70 C68 50, 65 40, 60 28"
-              fill="url(#phoenixGradBar)"
-            />
+      <nav class="main-navigation" aria-label="Navigation principale">
+        <a href="#ressenti">Le ressenti</a>
+        <a href="#offres">Les espaces</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-            <path
-              d="M60 40
-                 C42 40, 30 48, 24 60
-                 C30 54, 38 52, 46 54
-                 C38 56, 32 62, 29 70
-                 C37 64, 46 62, 54 64
-                 C47 66, 41 72, 38 80
-                 C47 72, 54 69, 60 68"
-              fill="none"
-              stroke="url(#phoenixGradBar)"
-              stroke-width="2.4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+      <div class="header-actions">
+        <div class="social-links" aria-label="Réseaux sociaux">
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            Facebook
+          </a>
 
-            <path
-              d="M60 40
-                 C78 40, 90 48, 96 60
-                 C90 54, 82 52, 74 54
-                 C82 56, 88 62, 91 70
-                 C83 64, 74 62, 66 64
-                 C73 66, 79 72, 82 80
-                 C73 72, 66 69, 60 68"
-              fill="none"
-              stroke="url(#phoenixGradBar)"
-              stroke-width="2.4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            Instagram
+          </a>
+        </div>
 
-            <text
-              x="130"
-              y="54"
-              fill="#1e4b3d"
-              font-family="Cormorant Garamond, 'Times New Roman', serif"
-              font-size="18"
-              letter-spacing="3"
-            >
-              RENAÎTRE À
-            </text>
-
-            <text
-              x="130"
-              y="78"
-              fill="#1e4b3d"
-              font-family="Cormorant Garamond, 'Times New Roman', serif"
-              font-size="20"
-              letter-spacing="3"
-            >
-              SOI-M’AIME
-            </text>
-          </svg>
+        <a class="header-contact" href="#contact">
+          Entrer
         </a>
-
-        <div class="top-white-right">
-          <div class="social-links">
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
-            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
-          </div>
-
-          <a href="mailto:contact@example.com" class="top-contact">contact@example.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <header class="hero" id="top">
-    <nav class="topbar">
-      <span class="topbar-spacer"></span>
-      <a href="#offres" class="enter-link">Entrer</a>
-    </nav>
-
-    <div class="hero-center">
-      <p class="hero-kicker">Transformation intérieure</p>
-
-      <div class="cadre-titre">
-        <h1>
-          <span>Renaître à</span>
-          <span>soi-m’aime</span>
-        </h1>
       </div>
 
-      <div class="hero-symbol-wrap">
-        <div class="hero-symbol-backdrop"></div>
-        <div class="hero-symbol">
-          <div class="dot dot-light"></div>
-          <div class="dot dot-dark"></div>
-        </div>
-      </div>
-
-      <div class="hero-sub-box">
-        <p class="hero-subtitle">
-          Un espace pour revenir à soi, apaiser la lutte intérieure
-          et retrouver une présence plus calme, plus claire et plus vivante.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#offres" class="btn btn-primary">Découvrir le chemin</a>
-          <a href="#about" class="btn btn-secondary">Lire l’intention</a>
-        </div>
-      </div>
     </div>
   </header>
 
-  <main>
-    <section id="ressenti" class="section section-deep">
-      <div class="container narrow">
-        <div class="cadre-section">
-          <p class="section-label">Le ressenti</p>
-          <h2>Quand l’intérieur demande plus de paix</h2>
+  <main id="main-content">
+
+    <section class="hero" id="top">
+      <div class="hero-background-shape hero-shape-one"></div>
+      <div class="hero-background-shape hero-shape-two"></div>
+
+      <div class="container hero-layout">
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Transformation intérieure</p>
+
+          <h1>
+            Renaître à
+            <em>soi-m’aime</em>
+          </h1>
+
+          <p class="hero-description">
+            Un espace sensible pour revenir à soi, apaiser la lutte intérieure
+            et retrouver une direction plus calme, plus claire et plus vivante.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#offres">
+              Découvrir le chemin
+            </a>
+
+            <a class="button button-secondary" href="#about">
+              Lire l’intention
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal reveal-delay">
+          <div class="hero-art-ring"></div>
+
+          <div class="hero-symbol" aria-hidden="true">
+            <div class="symbol-dot symbol-dot-light"></div>
+            <div class="symbol-dot symbol-dot-dark"></div>
+          </div>
+
+          <p class="hero-art-caption">
+            Revenir à l’essentiel
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="intro-section section-light" id="ressenti">
+      <div class="container intro-grid">
+
+        <div class="section-heading reveal">
+          <p class="eyebrow eyebrow-dark">Le ressenti</p>
+
+          <h2>
+            Quand l’intérieur demande
+            <em>plus de paix</em>
+          </h2>
+        </div>
+
+        <div class="prose reveal reveal-delay">
           <p class="lead">
             Il arrive d’avancer avec un poids intérieur que les autres ne voient pas.
-            Le doute s’installe, la fatigue grandit, et l’on finit parfois par se couper de soi-même.
+            Le doute s’installe, la fatigue grandit, et l’on finit parfois par se couper
+            de soi-même.
           </p>
+
           <p>
-            On continue, on tient, on fait semblant d’aller bien…
-            mais quelque chose en nous demande du calme, du sens et un vrai retour à l’essentiel.
+            On continue, on tient, on fait semblant d’aller bien… mais quelque chose
+            en nous demande du calme, du sens et un vrai retour à l’essentiel.
           </p>
+
+          <a class="text-link" href="#contact">
+            Ouvrir un premier espace
+            <span aria-hidden="true">↗</span>
+          </a>
         </div>
+
       </div>
     </section>
 
-    <section id="offres" class="section section-soft">
+    <section class="editorial-image-section section-cream" aria-label="Un espace pour ralentir">
+      <div class="container editorial-grid">
+
+        <div class="editorial-image-frame reveal">
+          <img
+            src="408.jpg"
+            alt="Lumière douce dans un paysage naturel"
+            width="1200"
+            height="800"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="editorial-image-copy reveal reveal-delay">
+          <p class="eyebrow eyebrow-dark">Un espace pour ralentir</p>
+
+          <h2>
+            Retrouver de la clarté
+            dans le mouvement intérieur
+          </h2>
+
+          <p>
+            Ici, il ne s’agit pas de devenir quelqu’un d’autre.
+            Il s’agit de retrouver ce qui était déjà là : une présence,
+            une écoute et une manière plus juste d’habiter sa vie.
+          </p>
+
+          <a class="text-link text-link-dark" href="#about">
+            Découvrir l’approche
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="spaces-section section-green" id="offres">
       <div class="container">
-        <div class="cadre-section">
-          <div class="section-heading">
-            <div>
-              <p class="section-label">Les espaces</p>
-              <h2>Une structure claire, un chemin vivant</h2>
-            </div>
-            <p class="section-aside">
-              Une page pensée comme un lieu d’accompagnement :
-              une promesse forte, des portes d’entrée visibles et un chemin simple à comprendre.
+
+        <div class="section-intro reveal">
+          <p class="eyebrow">Les espaces</p>
+
+          <h2>
+            Une structure claire,
+            <em>un chemin vivant</em>
+          </h2>
+
+          <p>
+            Des portes d’entrée différentes, selon le moment que tu traverses
+            et la profondeur que tu souhaites donner à ton chemin.
+          </p>
+        </div>
+
+        <div class="spaces-grid">
+
+          <article class="space-card reveal">
+            <span class="space-number">01</span>
+
+            <h3>Rencontres</h3>
+
+            <p>
+              Des temps pour remettre du mouvement, de la clarté et de l’élan
+              là où tout semblait figé.
             </p>
-          </div>
 
-          <div class="offers-grid">
-            <article class="offer-card">
-              <span class="card-index">01</span>
-              <h3>Rencontres</h3>
-              <p>
-                Des temps pour remettre du mouvement, de la clarté et de l’élan là où tout semblait figé.
-              </p>
-              <a href="#contact">Découvrir</a>
-            </article>
+            <a href="#contact" class="card-link">
+              Découvrir
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
 
-            <article class="offer-card">
-              <span class="card-index">02</span>
-              <h3>Ressources</h3>
-              <p>
-                Des mots, des pistes et des contenus pour nourrir le retour à soi avec douceur et profondeur.
-              </p>
-              <a href="#contact">Explorer</a>
-            </article>
+          <article class="space-card space-card-featured reveal reveal-delay">
+            <span class="space-number">02</span>
 
-            <article class="offer-card">
-              <span class="card-index">03</span>
-              <h3>Accompagnement</h3>
-              <p>
-                Un espace plus personnel pour transformer la lutte intérieure en présence, confiance et justesse.
-              </p>
-              <a href="#contact">Commencer</a>
-            </article>
-          </div>
+            <h3>Ressources</h3>
+
+            <p>
+              Des textes, des pistes et des pratiques pour nourrir le retour à soi
+              avec douceur et profondeur.
+            </p>
+
+            <a href="#contact" class="card-link">
+              Explorer
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="space-card reveal reveal-delay-more">
+            <span class="space-number">03</span>
+
+            <h3>Accompagnement</h3>
+
+            <p>
+              Un espace personnel pour transformer la lutte intérieure en présence,
+              confiance et justesse.
+            </p>
+
+            <a href="#contact" class="card-link">
+              Commencer
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-deep-alt">
-      <div class="container narrow">
-        <div class="cadre-section">
-          <p class="section-label">À propos</p>
-          <h2>Un lieu pensé comme une respiration</h2>
-          <p>
-            Renaître à soi-m’aime est né d’un besoin simple mais profond :
-            créer un espace plus sensible, plus élégant et plus apaisé pour celles et ceux
-            qui ressentent le besoin de revenir à eux-mêmes.
-          </p>
-          <p>
-            Ici, il ne s’agit pas de surjouer la spiritualité.
-            Il s’agit de retrouver son axe, de remettre de la lumière dans ce qui était devenu flou,
-            et d’ouvrir un chemin plus juste vers soi.
-          </p>
-        </div>
-      </div>
-    </section>
+    <section class="about-section section-light" id="about">
+      <div class="container about-grid">
 
-    <section class="section section-soft" id="inspiration">
-      <div class="container">
-        <div class="cadre-section">
-          <p class="section-label center-label">Inspiration</p>
-          <h2 class="center-title">Quelques phrases pour ouvrir l’espace</h2>
+        <div class="about-copy reveal">
+          <p class="eyebrow eyebrow-dark">À propos</p>
 
-          <div class="quotes-grid">
-            <blockquote class="cadre-citation">
-              <p>Chaque retour à soi est déjà un commencement.</p>
-            </blockquote>
+          <h2>
+            Un lieu pensé
+            <em>comme une respiration</em>
+          </h2>
 
-            <blockquote class="cadre-citation">
-              <p>Se reconstruire n’est pas revenir en arrière, c’est se retrouver autrement.</p>
-            </blockquote>
-
-            <blockquote class="cadre-citation">
-              <p>Le calme intérieur ne nie pas la blessure, il redonne la force de la traverser.</p>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section section-final">
-      <div class="container narrow">
-        <div class="cadre-section center-box">
-          <p class="section-label">Premier pas</p>
-          <h2>Et si le chemin commençait ici</h2>
           <p class="lead">
-            Quand quelque chose en toi appelle plus de paix, plus de vérité et plus d’alignement,
-            il suffit parfois d’un premier pas pour rouvrir l’espace intérieur.
+            Renaître à soi-m’aime est né d’un besoin simple mais profond :
+            créer un espace plus sensible, plus élégant et plus apaisé pour celles
+            et ceux qui ressentent le besoin de revenir à eux-mêmes.
           </p>
-          <a href="mailto:contact@example.com" class="btn btn-primary">Me contacter</a>
+
+          <p>
+            Une spiritualité simple, ancrée et vivante.
+            Sans promesse spectaculaire, sans formule toute faite.
+            Seulement un espace pour écouter ce qui cherche à émerger.
+          </p>
+
+          <a class="text-link" href="#contact">
+            Faire le premier pas
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="about-quote reveal reveal-delay">
+          <span class="quote-mark" aria-hidden="true">“</span>
+
+          <blockquote>
+            Chaque retour à soi est déjà
+            un commencement.
+          </blockquote>
+
+          <cite>Renaître à soi-m’aime</cite>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="quotes-section section-cream" id="inspiration">
+      <div class="container">
+
+        <div class="section-intro section-intro-dark reveal">
+          <p class="eyebrow eyebrow-dark">Inspiration</p>
+
+          <h2>
+            Quelques phrases
+            <em>pour ouvrir l’espace</em>
+          </h2>
+        </div>
+
+        <div class="quotes-grid">
+
+          <blockquote class="editorial-quote reveal">
+            <p>
+              Se reconstruire n’est pas revenir en arrière,
+              c’est se retrouver autrement.
+            </p>
+          </blockquote>
+
+          <blockquote class="editorial-quote reveal reveal-delay">
+            <p>
+              Le calme intérieur ne nie pas la blessure,
+              il redonne la force de la traverser.
+            </p>
+          </blockquote>
+
+          <blockquote class="editorial-quote reveal reveal-delay-more">
+            <p>
+              Il n’est jamais trop tard pour revenir
+              vers ce qui nous rend vivant.
+            </p>
+          </blockquote>
+
         </div>
       </div>
     </section>
+
+    <section class="contact-section section-green" id="contact">
+      <div class="container contact-layout">
+
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Premier pas</p>
+
+          <h2>
+            Et si le chemin
+            <em>commençait ici</em>
+          </h2>
+
+          <p>
+            Quand quelque chose en toi appelle plus de paix, plus de vérité
+            et plus d’alignement, il suffit parfois d’un premier pas
+            pour rouvrir l’espace intérieur.
+          </p>
+        </div>
+
+        <div class="contact-card reveal reveal-delay">
+          <p class="contact-card-label">Prendre contact</p>
+
+          <h3>
+            Échangeons autour
+            de ton intention
+          </h3>
+
+          <p>
+            Tu peux m’écrire directement. Je te répondrai avec attention
+            et simplicité.
+          </p>
+
+          <a
+            class="button button-primary"
+            href="mailto:contact@example.com"
+          >
+            Écrire un message
+          </a>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
-  <footer class="footer">
-    <p>© 2026 — Renaître à soi-m’aime</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 — Renaître à soi-m’aime
+      </p>
+
+      <div class="footer-links">
+        <a href="#top">Retour en haut</a>
+        <a href="mailto:contact@example.com">Contact</a>
+      </div>
+
+    </div>
   </footer>
 
-  <script>
-    const siteHeader = document.getElementById("siteHeader");
-
-    function updateHeaderOnScroll() {
-      if (window.scrollY > 40) {
-        siteHeader.classList.add("is-scrolled");
-      } else {
-        siteHeader.classList.remove("is-scrolled");
-      }
-    }
-
-    window.addEventListener("scroll", updateHeaderOnScroll);
-    updateHeaderOnScroll();
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
