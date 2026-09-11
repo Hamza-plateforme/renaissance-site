@@ -1,3 +1,4 @@
+
 const siteHeader = document.querySelector("#siteHeader");
 
 function updateStickyHeader() {
