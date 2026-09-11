@@ -21,7 +21,7 @@ updateStickyHeader();
 const internalLinks = document.querySelectorAll('a[href^="#"]');
 
 internalLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (event) => {
     const targetId = link.getAttribute("href");
 
     if (!targetId || targetId === "#") {
@@ -33,6 +33,8 @@ internalLinks.forEach((link) => {
     if (!target) {
       return;
     }
+
+    event.preventDefault();
 
     target.scrollIntoView({
       behavior: "smooth",
